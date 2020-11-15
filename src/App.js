@@ -1,17 +1,23 @@
-import { Col, Container, Row } from 'react-bootstrap';
 import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './Components/Home/Home/Home';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
 	return (
-		<div className='App'>
-			<Container>
-				<Row className='justify-content-center'>
-					<Col xl={3}>
-						<h3>Hello React Test</h3>
-					</Col>
-				</Row>
-			</Container>
-		</div>
+		<Router>
+			<Switch>
+				<Route path='/home'>
+					<Home />
+				</Route>
+				<Route exact path='/'>
+					<Home />
+				</Route>
+				<Route path='*'>
+					<NotFound />
+				</Route>
+			</Switch>
+		</Router>
 	);
 }
 
