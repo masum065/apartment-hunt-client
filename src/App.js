@@ -7,7 +7,7 @@ function App() {
 			<Container>
 				<Row className='justify-content-center'>
 					<Col xl={3}>
-						<h3>Hello React</h3>
+						<h3>Hello React Test</h3>
 					</Col>
 				</Row>
 			</Container>
