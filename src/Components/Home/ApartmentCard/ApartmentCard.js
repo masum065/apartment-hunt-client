@@ -5,33 +5,46 @@ import mapMarker from '../../../images/icons/map-marker-alt.png';
 import bed from '../../../images/icons/bed.png';
 import bath from '../../../images/icons/bath.png';
 import MainButton from '../../Shared/MainButton/MainButton';
-import cardCover from '../../../images/apartmet-images/Rectangle396.png';
+import { Link } from 'react-router-dom';
 
-const ApartmentCard = () => {
+const ApartmentCard = (props) => {
+	const {
+		name,
+		image,
+		location,
+		bedQuantity,
+		bathQuantity,
+		price,
+		_id,
+	} = props.apartmentInfo;
 	return (
 		<Col lg={4}>
-			<div className='apartment-card'>
+			<div className='apartment-card pt-3'>
 				<div
-					style={{ background: `url(${cardCover})` }}
+					style={{ background: `url(${image})` }}
 					className='apartment-card-bg'
 				></div>
 				<div className='apartmet-card-content'>
-					<h3>Washington Avenue</h3>
+					<h3>{name}</h3>
 					<div className='short-description'>
 						<p>
-							<img src={mapMarker} alt='mapmarker icon' />{' '}
-							Nasirabad H/S, Chattogram
+							<img src={mapMarker} alt='mapmarker icon' />
+							{location}
 						</p>
 						<p>
-							<img src={bed} alt='Bed icon' /> 3 Bedrooms
+							<img src={bed} alt='Bed icon' /> {bedQuantity}{' '}
+							Bedrooms
 						</p>
 						<p>
-							<img src={bath} alt='Bath Icon' />2 Bathroom
+							<img src={bath} alt='Bath Icon' />
+							{bathQuantity} Bathroom
 						</p>
 					</div>
 					<div className='pricebox'>
-						<p className='price'>$194</p>
-						<MainButton>View Details</MainButton>
+						<p className='price'>${price}</p>
+						<Link to={`/apartment/${_id}`}>
+							<MainButton>View Details</MainButton>
+						</Link>
 					</div>
 				</div>
 			</div>

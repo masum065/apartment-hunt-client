@@ -1,10 +1,10 @@
 import React from 'react';
 import './SectionTitle.scss';
-const SectionTitle = () => {
+const SectionTitle = ({ name, title }) => {
 	return (
 		<div className='section-title'>
-			<h3>House Rent</h3>
-			<h2>Discover the latest Rent available today</h2>
+			<h3>{name}</h3>
+			<h2>{title}</h2>
 		</div>
 	);
 };

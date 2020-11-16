@@ -1,0 +1,27 @@
+.service-card{
+
+    .card-image {
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+img {
+    display: block;
+    max-height: 100px;
+}
+    }
+    h4 {
+        color: #16322E;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    p {
+        color: #606268;
+        line-height: 28px;
+        padding: 0 20px;
+    }
+}
+
+
+
