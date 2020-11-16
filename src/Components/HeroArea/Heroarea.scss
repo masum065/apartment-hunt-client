@@ -1,0 +1,17 @@
+.HeroAreaStyle {
+    height: 446px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(../../image/images/image1.png);
+        background-size: cover;
+        background-position-y: 95%;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}

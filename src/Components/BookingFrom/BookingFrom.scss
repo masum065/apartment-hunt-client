@@ -1,0 +1,22 @@
+.BookingFrom {
+    padding-top: 50px;
+    text-align: center;
+    width: 370px;
+    margin: auto;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding-bottom: 30px;
+
+    .BookingFromInputStyle {
+        width: 331px;
+        border: none;
+        height: 45px;
+        padding-left: 10px;
+        color: #747474;
+        margin-bottom: 10px;
+    }
+    .error {
+        color: tomato;
+    }
+}
+

@@ -1,0 +1,23 @@
+.breadcumbStyle {
+    height: 269px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(../../image/images/image1.png);
+        background-size: cover;
+        background-position-y: 73%;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+.breadcumbStyle h2 {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-size: 40px;
+}
