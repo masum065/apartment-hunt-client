@@ -7,7 +7,7 @@ import './Home.scss';
 
 const Home = () => {
 	return (
-		<div>
+		<div style={{ background: '#F1F6F4' }}>
 			<Header />
 			<ApartmentList />
 			<Service />
