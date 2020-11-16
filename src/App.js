@@ -13,6 +13,9 @@ function App() {
 				<Route exact path='/'>
 					<Home />
 				</Route>
+				<Route path='/apartment:id'>
+					<NotFound />
+				</Route>
 				<Route path='*'>
 					<NotFound />
 				</Route>

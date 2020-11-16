@@ -1,0 +1,60 @@
+
+
+.apartment-card {
+
+
+    .apartment-card-bg {
+        height: 200px;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .apartmet-card-content {
+        padding: 20px 15px;
+        background: #fff;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 900;
+            color: #16322E;
+        }
+
+        .short-description {
+            padding: 5px 0px 20px;
+
+            p {
+                display: inline-block;
+                margin-right: 20px;
+
+                img {
+                    max-width: 19px;
+                    margin-right: 6px;
+                    color: #818181;
+                }
+            }
+        }
+
+        .pricebox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .price {
+                display: inline-block;
+                color: #275A53;
+                font-weight: 900;
+                font-size: 38px;
+                line-height: 1;
+    
+                margin-bottom: 0;
+            }
+    
+            button {
+                display: inline-block;
+                border: none;
+                border-radius: 0;
+            }
+
+        }
+        
+    }
+    
+}
