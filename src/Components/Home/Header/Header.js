@@ -1,4 +1,3 @@
-import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import MainButton from '../../Shared/MainButton/MainButton';
 import Menu from '../../Shared/Menu/Menu';
