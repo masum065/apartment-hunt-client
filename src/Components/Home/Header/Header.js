@@ -1,7 +1,10 @@
+import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import MainButton from '../../Shared/MainButton/MainButton';
 import Menu from '../../Shared/Menu/Menu';
 import SiteLogo from '../../Shared/SiteLog/SiteLogo';
+
+
 
 const Header = () => {
 	return (
