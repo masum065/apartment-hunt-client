@@ -13,6 +13,7 @@ import {
 } from './LoginManager';
 import { useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../../App';
+import Header from '../Home/Header/Header';
 
 const Login = () => {
 	const { register, handleSubmit, watch, errors } = useForm();
@@ -85,6 +86,7 @@ const Login = () => {
 
 	return (
 		<>
+			<Header />
 			<Container>
 				<Row className='justify-content-center'>
 					<Col md={6}>

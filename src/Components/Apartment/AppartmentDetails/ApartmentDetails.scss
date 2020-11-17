@@ -1,0 +1,47 @@
+.apartmet-details{
+
+
+    .slide-images {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        img {
+            max-width: 163px;
+        }
+    }
+
+
+    .aprtment-body {
+        margin-top: 40px;
+
+        .apartmet-tite {
+            display: flex;
+            justify-content: space-between; 
+
+        h3, .price {
+                font-size: 36px;
+                font-weight: bold;
+                color: #275A53;
+            
+            }
+        h3 {
+            color: #16322E;
+            }
+        }
+
+        p {
+            color: #747474;
+            line-height: 37px;
+            font-size: 20px;
+        }
+        .subtite {
+            color: #16322E;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+    } 
+}

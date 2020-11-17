@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 const ApartmentCard = (props) => {
 	const {
-		name,
+		title,
 		image,
 		location,
-		bedQuantity,
-		bathQuantity,
+		bathroom,
+		bedroom,
 		price,
 		_id,
 	} = props.apartmentInfo;
@@ -21,23 +21,24 @@ const ApartmentCard = (props) => {
 		<Col lg={4}>
 			<div className='apartment-card pt-3'>
 				<div
-					style={{ background: `url(${image})` }}
+					style={{
+						background: `url(${`data:image/png;base64,${image.img}`})`,
+					}}
 					className='apartment-card-bg'
 				></div>
 				<div className='apartmet-card-content'>
-					<h3>{name}</h3>
+					<h3>{title}</h3>
 					<div className='short-description'>
 						<p>
 							<img src={mapMarker} alt='mapmarker icon' />
 							{location}
 						</p>
 						<p>
-							<img src={bed} alt='Bed icon' /> {bedQuantity}{' '}
-							Bedrooms
+							<img src={bed} alt='Bed icon' /> {bedroom} Bedrooms
 						</p>
 						<p>
 							<img src={bath} alt='Bath Icon' />
-							{bathQuantity} Bathroom
+							{bathroom} Bathroom
 						</p>
 					</div>
 					<div className='pricebox'>

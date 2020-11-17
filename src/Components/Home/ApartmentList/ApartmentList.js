@@ -1,31 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ApartmentCard from '../ApartmentCard/ApartmentCard';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import cardCover from '../../../images/apartmet-images/Rectangle396.png';
 
-const apartmentData = [
-	{
-		name: 'Washington Avenue',
-		location: 'Nasirabad H/S, Chattogram',
-		image: cardCover,
-		bedQuantity: 2,
-		bathQuantity: 3,
-		price: 194,
-		_id: 6546454,
-	},
-	{
-		name: 'Family Apartment Three',
-		location: 'Nasirabad H/S, Chattogram',
-		image: cardCover,
-		bedQuantity: 2,
-		bathQuantity: 3,
-		price: 594,
-		_id: 65464654,
-	},
-];
+const ApartmentList = (props) => {
+	console.log(props);
+	const [apartments, setApartments] = useState([]);
 
-const ApartmentList = () => {
+	useEffect(() => {
+		fetch('http://localhost:5000/apartments')
+			.then((res) => res.json())
+			.then((data) => {
+				setApartments(data);
+			});
+	}, []);
+
 	return (
 		<Container className='py-5'>
 			<Row className='justify-content-center'>
@@ -37,8 +26,11 @@ const ApartmentList = () => {
 				</Col>
 			</Row>
 			<Row>
-				{apartmentData.map((apartmentInfo) => (
-					<ApartmentCard apartmentInfo={apartmentInfo} />
+				{apartments.map((apartmentInfo) => (
+					<ApartmentCard
+						key={apartmentInfo._id}
+						apartmentInfo={apartmentInfo}
+					/>
 				))}
 			</Row>
 		</Container>
