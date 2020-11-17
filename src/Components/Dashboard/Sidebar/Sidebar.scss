@@ -1,0 +1,32 @@
+.panel-sidebar{
+
+    margin-top: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    p {
+        cursor: pointer;
+        margin-bottom: 17px;
+        color: #000;
+        display: block;
+        width: 100%;
+        :focus svg path {
+            fill: red !important;
+        }
+    }
+    p.active {
+        color: #009444;
+        svg, svg path {
+            fill: #009444;
+        }
+    }
+     svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+        path {
+            fill: #000;
+        }
+    }
+}

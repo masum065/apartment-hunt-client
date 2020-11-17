@@ -1,11 +1,10 @@
 .BookingFrom {
-    padding-top: 50px;
     text-align: center;
     width: 370px;
     margin: auto;
     background-color: #F4F4F4;
-    border-radius: 10px;
-    padding-bottom: 30px;
+    border-radius: 0px;
+    padding: 40px 20px 30px;
 
     .BookingFromInputStyle {
         width: 331px;
@@ -16,7 +15,19 @@
         margin-bottom: 10px;
     }
     .error {
-        color: tomato;
+        color: red;
+    }
+
+    .main-btn {
+        display: block;
+        border-radius: 0;
+        width: 100%;
+        margin-top: 11px;
+    }
+    .alert {
+        padding: 5px 20px;
+        font-size: 14px;
     }
 }
+
 

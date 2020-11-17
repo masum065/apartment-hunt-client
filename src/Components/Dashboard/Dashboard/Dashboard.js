@@ -1,12 +1,15 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import DashboardHeader from '../DashboardHeader/DashboardHeader';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Dashboard = () => {
 	return (
-		<div>
-			<h3>Hello Form Dashboard</h3>
-		</div>
+		<Container fluid>
+			<DashboardHeader title='Order List' />
+			<Sidebar />
+		</Container>
 	);
 };
 
 export default Dashboard;
-<h3>Hello Form Dashboard</h3>;
